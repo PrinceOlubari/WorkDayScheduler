@@ -1,7 +1,12 @@
 
+//using the moment library to display the date in a given format
 let todayDate=moment().format("dddd, MMMM Do YYYY");
+
+//getting the stored task and passing it to a variable
 let firstTask=localStorage.getItem('task1')
 $('#textArea').val(firstTask);
+
+
 let firstTask1=localStorage.getItem('task2')
 $('#textArea1').val(firstTask1);
 
@@ -27,7 +32,21 @@ let firstTask8=localStorage.getItem('task9')
 $('#textArea8').val(firstTask8);
 
 
-$('#displayDate').text(todayDate)
+$('#displayDate').text(todayDate);
+
+//applying the css property of width to the text areas
+$('#textArea').css({'width':'500px'})
+$('#textArea1').css({'width':'500px'})
+$('#textArea2').css({'width':'500px'})
+$('#textArea3').css({'width':'500px'})
+$('#textArea4').css({'width':'500px'})
+$('#textArea5').css({'width':'500px'})
+$('#textArea6').css({'width':'500px'})
+$('#textArea7').css({'width':'500px'})
+$('#textArea8').css({'width':'500px'})
+
+
+
 
 
 
